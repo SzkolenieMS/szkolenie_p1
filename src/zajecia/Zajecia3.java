@@ -10,7 +10,7 @@ public class Zajecia3 {
 
         fahrenheittoCelsius(80);
         celsiusToFarenheit(25);
-        minMax(3,4,9);
+        minMax(3, 4, 9);
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("podaj a");
@@ -19,20 +19,18 @@ public class Zajecia3 {
         int b = scanner.nextInt();
         System.out.println("podaj c");
         int c = scanner.nextInt();
-        minMax(a,b,c);
-
-
+        minMax(a, b, c);
 
 
     }
 
-    public static void fahrenheittoCelsius (int fahrenheit) {
-        double celsjusz = (fahrenheit -32) / 1.8;
+    public static void fahrenheittoCelsius(int fahrenheit) {
+        double celsjusz = (fahrenheit - 32) / 1.8;
         System.out.println(fahrenheit + "farenow to " + celsjusz + "celsjuszy");
 
     }
 
-    public static void celsiusToFarenheit (int celsius) {
+    public static void celsiusToFarenheit(int celsius) {
         double fahrenheit = 1.8 * celsius + 32;
         System.out.println(celsius + "celsjuszy to " + fahrenheit + "farenow");
 
@@ -42,11 +40,11 @@ public class Zajecia3 {
 
     public static void minMax(int a, int b, int c) {
 
-        if ( a >=b && a>=c) {
-                System.out.println("a jest najwieksze");
+        if (a >= b && a >= c) {
+            System.out.println("a jest najwieksze");
 
 
-        }else if (b>=a && b>=c) {
+        } else if (b >= a && b >= c) {
             System.out.println("b jest najwieksze");
 
         } else {
@@ -54,30 +52,23 @@ public class Zajecia3 {
 
         }
 
-        if (a <=b && a<=c) {
-                System.out.println("a jest najmniejsze");
+        if (a <= b && a <= c) {
+            System.out.println("a jest najmniejsze");
 
 
-            } else if (b>=a && b<=c) {
-                System.out.println("b jest najmniejsze");
+        } else if (b >= a && b <= c) {
+            System.out.println("b jest najmniejsze");
 
 
-            } else {
+        } else {
 
-                System.out.println("c jest najmniejsze");
-            }
-
-
-
-
-
+            System.out.println("c jest najmniejsze");
         }
-
-
-
 
 
     }
 
 
 }
+
+
