@@ -23,7 +23,7 @@ public class Zajecia3 {
 //        int c = scanner.nextInt();
 //        minMax(a, b, c);
 
-
+//.
     }
 
     public static void bmi (int weight, double height){
