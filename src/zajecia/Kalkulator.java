@@ -65,7 +65,10 @@ public class Kalkulator {
             }
         }
     }
+    public static void isEven(int number, int number2){
 
+
+    }
     public static void avg(int[] array){
 
             int sum = 0;

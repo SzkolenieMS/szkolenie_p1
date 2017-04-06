@@ -47,6 +47,7 @@ public class HelloWorld { //classa
         System.out.println(" shift + f6 - rename elementu");
         System.out.println(" alt + j - zaznaczanie wystapien zaznaczenia");
         System.out.println(" ctrl + shift + v - lista tego co kopiowalismy");
+        System.out.println(" ctrl + p - pokazuje jakie argumenty podac");
     }
 
     public static void sumOftakennumbers() {
