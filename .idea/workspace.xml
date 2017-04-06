@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d4165cf-1577-44ef-bcf9-e3cafb8726d8" name="Default" comment="new message">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zajecia/HelloWorld.java" afterPath="$PROJECT_DIR$/src/zajecia/HelloWorld.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zajecia/Zajecia3.java" afterPath="$PROJECT_DIR$/src/zajecia/Zajecia3.java" />
     </list>
     <ignored path="szkolenie_p1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +25,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HelloWorld.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HelloWorld.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zajecia/HelloWorld.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="321">
@@ -51,6 +50,16 @@
                 <element signature="method#isNumberEven#0;class#HelloWorld#0" expanded="false" />
                 <element signature="method#checkBigger#0;class#HelloWorld#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,6 +131,7 @@
         <option value="$PROJECT_DIR$/src/zajecia/Kalkulator.java" />
         <option value="$PROJECT_DIR$/src/zajecia/Zajecia3.java" />
         <option value="$PROJECT_DIR$/src/zajecia/HelloWorld.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -736,7 +746,7 @@
       <workItem from="1491320616732" duration="11629000" />
       <workItem from="1491406531102" duration="12230000" />
       <workItem from="1491491879348" duration="2535000" />
-      <workItem from="1491495947068" duration="5516000" />
+      <workItem from="1491495947068" duration="6353000" />
     </task>
     <task id="LOCAL-00001" summary="new message">
       <created>1491497050126</created>
@@ -756,7 +766,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31910000" />
+    <option name="totallyTimeSpent" value="32747000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1051,6 +1061,14 @@
             <element signature="method#isNumberEven#0;class#HelloWorld#0" expanded="false" />
             <element signature="method#checkBigger#0;class#HelloWorld#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
