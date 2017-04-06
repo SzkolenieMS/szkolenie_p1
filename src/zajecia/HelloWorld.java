@@ -48,6 +48,9 @@ public class HelloWorld { //classa
         System.out.println(" alt + j - zaznaczanie wystapien zaznaczenia");
         System.out.println(" ctrl + shift + v - lista tego co kopiowalismy");
         System.out.println(" ctrl + p - pokazuje jakie argumenty podac");
+        System.out.println("git commit -m jakis opis w cudzyslowie");
+        System.out.println("git push -u origin master");
+
     }
 
     public static void sumOftakennumbers() {
