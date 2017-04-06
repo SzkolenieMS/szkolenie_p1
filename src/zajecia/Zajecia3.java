@@ -11,14 +11,14 @@ public class Zajecia3 {
 //        fahrenheittoCelsius(80);
 //        celsiusToFarenheit(25);
 //        minMax(3, 4, 9);
-//
+// ....
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("podaj wage");
         int a = scanner.nextInt();
         System.out.println("podaj wysokosc");
         double b = scanner.nextDouble();
-        bmi(a,b);
+        bmi(a, b);
 //        System.out.println("podaj c");
 //        int c = scanner.nextInt();
 //        minMax(a, b, c);
@@ -26,14 +26,14 @@ public class Zajecia3 {
 //.
     }
 
-    public static void bmi (int weight, double height){
+    public static void bmi(int weight, double height) {
 //        waga/wzrost*wzrost
-        double bmi = weight/(height*height);
+        double bmi = weight / (height * height);
         System.out.println("Your bmi" + bmi);
         if (bmi <= 18.5) {
             System.out.println("Masz niedowage");
 
-        } else if (bmi > 18.5 && bmi <24.9) {
+        } else if (bmi > 18.5 && bmi < 24.9) {
             System.out.println("Idealna waga");
         } else {
             System.out.println("masz nadwage");
@@ -41,7 +41,6 @@ public class Zajecia3 {
 
 
     }
-
 
 
     public static void fahrenheittoCelsius(int fahrenheit) {

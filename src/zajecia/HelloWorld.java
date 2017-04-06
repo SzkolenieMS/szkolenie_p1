@@ -48,8 +48,15 @@ public class HelloWorld { //classa
         System.out.println(" alt + j - zaznaczanie wystapien zaznaczenia");
         System.out.println(" ctrl + shift + v - lista tego co kopiowalismy");
         System.out.println(" ctrl + p - pokazuje jakie argumenty podac");
+        System.out.println("rm -rf nazwa_katalogu [rekursywne usuwanie]");
+        System.out.println("alt+9 i ctrl+D - porowanie wersji");
+
+
+        System.out.println("git add . [dodanie wszystkich plikow]");
         System.out.println("git commit -m jakis opis w cudzyslowie");
         System.out.println("git push -u origin master");
+        System.out.println("git clone ADRES_HTTTPS [pobranie w domu - klon wersji z github]");
+        System.out.println("git stash && git pull [pobieranie z repo internetowego]");
 
     }
 
