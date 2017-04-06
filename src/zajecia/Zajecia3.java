@@ -1,5 +1,7 @@
 package zajecia;
 
+import java.util.Scanner;
+
 /**
  * Created by RENT on 2017-04-06.
  */
@@ -9,6 +11,16 @@ public class Zajecia3 {
         fahrenheittoCelsius(80);
         celsiusToFarenheit(25);
         minMax(3,4,9);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("podaj a");
+        int a = scanner.nextInt();
+        System.out.println("podaj b");
+        int b = scanner.nextInt();
+        System.out.println("podaj c");
+        int c = scanner.nextInt();
+        minMax(a,b,c);
+
 
 
 
@@ -30,11 +42,11 @@ public class Zajecia3 {
 
     public static void minMax(int a, int b, int c) {
 
-        if ( a > b && a>c) {
+        if ( a >=b && a>=c) {
                 System.out.println("a jest najwieksze");
 
 
-        }else if (b>a && b>c) {
+        }else if (b>=a && b>=c) {
             System.out.println("b jest najwieksze");
 
         } else {
@@ -42,11 +54,11 @@ public class Zajecia3 {
 
         }
 
-        if (a <b && a<c) {
+        if (a <=b && a<=c) {
                 System.out.println("a jest najmniejsze");
 
 
-            } else if (b>a && b<c) {
+            } else if (b>=a && b<=c) {
                 System.out.println("b jest najmniejsze");
 
 
