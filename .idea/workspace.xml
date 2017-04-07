@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d4165cf-1577-44ef-bcf9-e3cafb8726d8" name="Default" comment="new message">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zajecia/ZajecieCztery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/szkolenie_p1/zajecia/HelloWorld.class" afterPath="$PROJECT_DIR$/out/production/szkolenie_p1/zajecia/HelloWorld.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/szkolenie_p1/zajecia/Zajecia3.class" afterPath="$PROJECT_DIR$/out/production/szkolenie_p1/zajecia/Zajecia3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zajecia/ZajecieCztery.java" afterPath="$PROJECT_DIR$/src/zajecia/ZajecieCztery.java" />
     </list>
     <ignored path="szkolenie_p1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,13 +65,13 @@
       <file leaf-file-name="ZajecieCztery.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zajecia/ZajecieCztery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="1260">
+              <caret line="79" column="23" lean-forward="false" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
               <folding>
-                <element signature="e#1768#1769#0" expanded="true" />
-                <element signature="e#1822#1823#0" expanded="true" />
-                <element signature="e#1866#1867#0" expanded="true" />
-                <element signature="e#1929#1930#0" expanded="true" />
+                <element signature="e#2643#2644#0" expanded="true" />
+                <element signature="e#2697#2698#0" expanded="true" />
+                <element signature="e#2741#2742#0" expanded="true" />
+                <element signature="e#2804#2805#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -769,7 +766,7 @@
       <workItem from="1491406531102" duration="12230000" />
       <workItem from="1491491879348" duration="2535000" />
       <workItem from="1491495947068" duration="6460000" />
-      <workItem from="1491579642977" duration="7141000" />
+      <workItem from="1491579642977" duration="9749000" />
     </task>
     <task id="LOCAL-00001" summary="new message">
       <created>1491497050126</created>
@@ -789,7 +786,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39995000" />
+    <option name="totallyTimeSpent" value="42603000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -814,7 +811,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33070865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33070865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1138,28 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zajecia/zadaniazeskanerem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="method#sumoddElements#0;class#zadaniazeskanerem#0" expanded="false" />
-            <element signature="method#everySecondElement#0;class#zadaniazeskanerem#0" expanded="false" />
-            <element signature="method#isEven#0;class#zadaniazeskanerem#0" expanded="false" />
-            <element signature="method#max#0;class#zadaniazeskanerem#0" expanded="false" />
-            <element signature="method#sumOftakennumbers#0;class#zadaniazeskanerem#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/zajecia/HelloWorld.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -1187,15 +1162,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zajecia/zadaniazeskanerem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="method#sumoddElements#0;class#zadaniazeskanerem#0" expanded="false" />
+            <element signature="method#everySecondElement#0;class#zadaniazeskanerem#0" expanded="false" />
+            <element signature="method#isEven#0;class#zadaniazeskanerem#0" expanded="false" />
+            <element signature="method#max#0;class#zadaniazeskanerem#0" expanded="false" />
+            <element signature="method#sumOftakennumbers#0;class#zadaniazeskanerem#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/zajecia/ZajecieCztery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="1260">
+          <caret line="79" column="23" lean-forward="false" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
           <folding>
-            <element signature="e#1768#1769#0" expanded="true" />
-            <element signature="e#1822#1823#0" expanded="true" />
-            <element signature="e#1866#1867#0" expanded="true" />
-            <element signature="e#1929#1930#0" expanded="true" />
+            <element signature="e#2643#2644#0" expanded="true" />
+            <element signature="e#2697#2698#0" expanded="true" />
+            <element signature="e#2741#2742#0" expanded="true" />
+            <element signature="e#2804#2805#0" expanded="true" />
           </folding>
         </state>
       </provider>

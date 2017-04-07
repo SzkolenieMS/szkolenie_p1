@@ -8,16 +8,49 @@ import java.util.Scanner;
 public class ZajecieCztery {
 
     public static void main(String[] args) {
-        int[] tablica = {1, 2, 3, 4, 0};
+        int[] tablica = getArrayFromUser();
 //        minFromArray(tablica);
 //        maxFromArray(tablica);
 //        avg(tablica);
 //         revers(tablica);
-        statistic(tablica);
+//        statistic(tablica);
+        displayArray(tablica);
+
+    }
+public static void displayReversed(int[] array){
+        displayArray(reversTable(array));
+
+
+}
+
+    public static void displayArray(int[] array){
+        System.out.println("[");
+        for (int i = 0; i <array.length ; i++) {
+            System.out.print(array[i]);
+            if (i != array.length -1)
+                System.out.println(", ");
+        }
+        System.out.println("]");
 
 
 
     }
+
+
+    public static int[] getArrayFromUser(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Podaj ilosc elementow: ");
+        int ile = scanner.nextInt();
+        int[] array = new int[ile] ;
+        for (int i = 0; i < ile ; i++) {
+            System.out.println("Podaj " + (i+1) + " liczbe");
+            array[i] = scanner.nextInt();
+
+            }
+        return array;
+
+        }
+
 
     public static void statistic (int[] array){
         System.out.println("Minimalna: " + minFromArray(array));
@@ -44,7 +77,7 @@ public class ZajecieCztery {
 
     }
 
-    public static void reversTable(int[] array){
+    public static int[] reversTable(int[] array){
         int temp =0;
         for (int i = 0; i < (array.length/2)+1 ; i++) {
 //            System.out.println(i);
@@ -52,6 +85,8 @@ public class ZajecieCztery {
              array[0+i] = array[array.length-i-1];
             array[array.length-i-1] = temp;
         }
+        return array;
+
     }
 
         public static int abs(int number) {
