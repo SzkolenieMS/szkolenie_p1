@@ -31,7 +31,7 @@ public static int BOT(int number, int lastnumber){
 
         }else
     {
-        randomik = random.nextInt(100-lastnumber);
+        randomik = random.nextInt(100-lastnumber)+lastnumber;
         System.out.println("Randomik: " + randomik);
         return randomik;
 
