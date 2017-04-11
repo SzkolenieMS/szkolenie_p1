@@ -67,6 +67,12 @@ public class Zajecia5 {
         System.out.println(random.nextInt(15) + 5);
     }
 
+    public static int[] getRandomlowArray(int size) {
+        return getRandomArray(size, 15);
+    }
+
+
+
     public static int[] getRandomArray(int size) {
         return getRandomArray(size, Integer.MAX_VALUE);
     }
@@ -228,7 +234,8 @@ public class Zajecia5 {
         Random random = new Random();
         int number = (random.nextInt(10) + 15);
         int[] array = getArray(number);
-        Zajecia4.statistics(array);
+
+//        Zajecia4.statistics(array);
         tree(number - 12);
 //        Zajecia4.statistics(getRandomArray(10, 10, 15));
 //        System.out.println();

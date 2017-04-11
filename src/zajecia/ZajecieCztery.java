@@ -75,11 +75,11 @@ public class ZajecieCztery {
     }
 
     public static void displayArray(int[] array) {
-        System.out.println("[");
+        System.out.print("[");
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i]);
             if (i != array.length - 1)
-                System.out.println(", ");
+                System.out.print(", ");
         }
         System.out.println("]");
 
