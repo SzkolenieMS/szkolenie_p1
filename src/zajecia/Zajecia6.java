@@ -14,8 +14,85 @@ public class Zajecia6 {
 //        System.out.println("Podaj liczbe");
 //    Scanner scanner = new Scanner(System.in);
 //    printPowersOf2(scanner.nextInt());
-        runAvgUntilMethod();
+//        runAvgUntilMethod();
+//        gamerMoreLessInitiate();
+        System.out.println("Kroki: " +   gameBotMoreLess(15) );
     }
+
+public static int BOT(int number, int lastnumber){
+        Random random = new Random();
+        int randomik = 0;
+        if (lastnumber < 0) lastnumber *= -1;
+        if (lastnumber < 2) lastnumber+=20;
+        if (number == 0 ){
+             randomik = random.nextInt(lastnumber)+(100-lastnumber);
+            System.out.println("Randomik: " + randomik);
+            return randomik;
+
+        }else
+    {
+        randomik = random.nextInt(100-lastnumber);
+        System.out.println("Randomik: " + randomik);
+        return randomik;
+
+    }
+//    System.out.println(lastnumber + "last");
+
+
+
+}
+    public static int gameBotMoreLess(int number){
+
+        System.out.println("Moj number" + number);
+        int kroki = 0;
+        int lastnumber = 1;
+        int usernumber = -1;
+        int result = 0;
+        while (number != usernumber){
+            usernumber = BOT(result, lastnumber);
+            lastnumber = usernumber;
+            System.out.println("shot:" + usernumber);
+            //if (usernumber > number) lastnumber;
+            kroki++;
+            if (usernumber > number) result = 1;
+            if (usernumber < number) result = 0;
+            if (usernumber>1001 || usernumber<-1000) break;
+        }
+        return kroki;
+    }
+
+
+
+
+
+
+    public static void gamerMoreLessInitiate(){
+
+        Random random = new Random();
+        int liczbakrokow = gameMoreLess(random.nextInt(100));
+        System.out.println("Zrobiles to w " + liczbakrokow + " krokach ");
+
+
+    }
+    public static int gameMoreLess(int number){
+       //number 0-100
+        System.out.println("Moj number" + number);
+        int kroki = 0;
+        int usernumber = -1;
+        Scanner scanner= new Scanner(System.in);
+        while (number != usernumber){
+            System.out.println("Podaj liczbe");
+            usernumber = scanner.nextInt();
+            if (usernumber > number) System.out.println("Za duza liczba");
+            if (usernumber < number) System.out.println("Za mala liczba");
+            System.out.println();
+            System.out.println();
+            kroki++;
+        }
+        return kroki;
+    }
+
+
 
     public static void runAvgUntilMethod(){
 
@@ -31,20 +108,16 @@ public class Zajecia6 {
     }
 
     public static boolean avgUntil(int[] array, int sum){
-        int arraysum = 0;
+        int arraysum = array[0];
         int i=1;
         int avg = 0;
-        while(avg < sum){
-            if (array.length == i){
-                System.out.println("Average: "+ avg);
-                return false;
-            }
+        while(avg < sum && array.length > i){
             arraysum += array[i];
             avg = arraysum / i ;
             i++;
         }
         System.out.println("Average: "+ avg);
-        return true;
+        return avg>=sum;
 
     }
 
