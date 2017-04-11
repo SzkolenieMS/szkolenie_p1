@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d4165cf-1577-44ef-bcf9-e3cafb8726d8" name="Default" comment="new message">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zajecia/Zajecia5.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zajecia/ZajecieCztery.java" afterPath="$PROJECT_DIR$/src/zajecia/ZajecieCztery.java" />
     </list>
     <ignored path="szkolenie_p1.iws" />
@@ -63,17 +63,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZajecieCztery.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ZajecieCztery.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zajecia/ZajecieCztery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+            <state relative-caret-position="238">
+              <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#564#565#0" expanded="true" />
-                <element signature="e#626#627#0" expanded="true" />
-                <element signature="e#689#690#0" expanded="true" />
-                <element signature="e#742#743#0" expanded="true" />
+                <element signature="e#770#771#0" expanded="true" />
+                <element signature="e#832#833#0" expanded="true" />
+                <element signature="e#895#896#0" expanded="true" />
+                <element signature="e#948#949#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Zajecia5.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia5.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4318">
+              <caret line="254" column="1" lean-forward="false" selection-start-line="254" selection-start-column="1" selection-end-line="254" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2112#2113#0" expanded="true" />
+                <element signature="e#2174#2175#0" expanded="true" />
+                <element signature="e#2237#2238#0" expanded="true" />
+                <element signature="e#2290#2291#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,6 +147,7 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/zajecia/Kalkulator.java" />
         <option value="$PROJECT_DIR$/src/zajecia/ZajecieCztery.java" />
+        <option value="$PROJECT_DIR$/src/zajecia/Zajecia5.java" />
       </list>
     </option>
   </component>
@@ -145,6 +162,9 @@
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -769,7 +789,7 @@
       <workItem from="1491491879348" duration="2535000" />
       <workItem from="1491495947068" duration="6460000" />
       <workItem from="1491579642977" duration="9889000" />
-      <workItem from="1491924842860" duration="2236000" />
+      <workItem from="1491924842860" duration="3591000" />
     </task>
     <task id="LOCAL-00001" summary="new message">
       <created>1491497050126</created>
@@ -789,7 +809,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44979000" />
+    <option name="totallyTimeSpent" value="46334000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -801,7 +821,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -814,7 +834,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33070865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33070865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -950,10 +970,10 @@
           <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1250,14 +1270,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zajecia/ZajecieCztery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        <state relative-caret-position="238">
+          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4318">
+          <caret line="254" column="1" lean-forward="false" selection-start-line="254" selection-start-column="1" selection-end-line="254" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2112#2113#0" expanded="true" />
+            <element signature="e#2174#2175#0" expanded="true" />
+            <element signature="e#2237#2238#0" expanded="true" />
+            <element signature="e#2290#2291#0" expanded="true" />
           </folding>
         </state>
       </provider>

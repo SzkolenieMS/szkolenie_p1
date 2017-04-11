@@ -19,12 +19,20 @@ public class ZajecieCztery {
 //        statistic(tablica);
 //        displayArray(tablica);
 //        homework();
+        lineOfNumbers(5);
 
     }
 
     public static void lineOfNumbers(int value){
+        for (int i = 0; i <value -1 ; i++) {
+            for (int j = 0; j <i ; j++) {
+                System.out.print(" ");
+            }
+            System.out.println(i+1);
 
-        
+
+        }
+
 
 
     }
