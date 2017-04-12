@@ -16,7 +16,7 @@
       <file leaf-file-name="Zajecia6.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia6.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="323">
               <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
               <folding />
             </state>
@@ -402,16 +402,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/zajecia/Zajecia6.java</url>
-          <line>41</line>
-          <properties class="zajecia.Zajecia6" method="BOT">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
@@ -457,7 +447,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia6.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="323">
           <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
           <folding />
         </state>

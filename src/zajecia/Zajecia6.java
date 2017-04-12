@@ -25,6 +25,7 @@ public class Zajecia6 {
 //        System.out.println(zmienna);
         GrajacyBot(1000000);
     }
+
     public static void GrajacyBot(int ilegier) {
         int suma = 0;
         int krokow;
@@ -35,7 +36,7 @@ public class Zajecia6 {
             suma += krokow;
         }
 
-            System.out.println("Srednia ilosc krokow na " + ilegier + " gier = " + (double)suma / ilegier);
+        System.out.println("Srednia ilosc krokow na " + ilegier + " gier = " + (double) suma / ilegier);
     }
 
 
@@ -43,24 +44,22 @@ public class Zajecia6 {
         Random random = new Random();
         int[] tablica = {0, 0, 0};
         boolean truefalse = true;
-
+//        System.out.println("Start - LastNumber " + lastnumber + " Mniejszawieksza: " + mniejszanajwieksza + " Wiekszamniejsza: " + wiekszamniejsza);
         while (truefalse) {
             truefalse = false;
             if (result == 0) {
                 tablica[0] = random.nextInt(mniejszanajwieksza - lastnumber) + lastnumber;
 //                System.out.println("mniejsze( "+ mniejszanajwieksza+  " - " + lastnumber + " ) +" + lastnumber);
-//                if (lastnumber >= wiekszamniejsza)
-                    tablica[2] = lastnumber;
-
                 tablica[1] = mniejszanajwieksza;
+                tablica[2] = lastnumber;
+
 
             } else {
-//                System.out.println(wiekszamniejsza);
-                if ((mniejszanajwieksza-wiekszamniejsza)==0) mniejszanajwieksza+=1;
-                tablica[0] = random.nextInt(mniejszanajwieksza-wiekszamniejsza)+wiekszamniejsza;//lastnumber)-;
-//                System.out.println("wieksze(" + wiekszamniejsza + ")");
-//                if (lastnumber <= mniejszanajwieksza)
-                    tablica[1] = lastnumber;
+
+                // if ((mniejszanajwieksza - wiekszamniejsza) == 0) mniejszanajwieksza += 1;
+                tablica[0] = random.nextInt(lastnumber - wiekszamniejsza) + wiekszamniejsza;
+//                System.out.println("wieksze(" + mniejszanajwieksza + " - " +wiekszamniejsza + " ) +" + wiekszamniejsza);
+                tablica[1] = lastnumber;
                 tablica[2] = wiekszamniejsza;
 
             }
@@ -71,7 +70,7 @@ public class Zajecia6 {
             }
         }
 //        if (tablica[1] == 0) tablica[1] =1;
-//        System.out.println("Random: " + tablica[0] + " Mniejszawieksza: " + tablica[1] + " Wiekszamniejsza: " + tablica[2]);
+//        System.out.println("End - Random: " + tablica[0] + " Mniejszawieksza: " + tablica[1] + " Wiekszamniejsza: " + tablica[2]);
         tablicawynikow[kroki] = tablica[0];
         return tablica;
 
@@ -92,7 +91,7 @@ public class Zajecia6 {
         while (number != usernumber) {
             if (usernumber > number) result = 1;
             if (usernumber < number) result = 0;
-            tabelka = BOT(result, lastnumber, mniejszanajwieksza, tablicawynikow, kroki , wiekszamniejsza);
+            tabelka = BOT(result, lastnumber, mniejszanajwieksza, tablicawynikow, kroki, wiekszamniejsza);
             usernumber = tabelka[0];
             lastnumber = usernumber;
             mniejszanajwieksza = tabelka[1];
