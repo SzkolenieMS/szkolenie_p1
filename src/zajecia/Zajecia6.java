@@ -10,55 +10,43 @@ public class Zajecia6 {
 
     public static void main(String[] args) {
 
-//        rememberWhile();
-//        System.out.println("Podaj liczbe");
-//    Scanner scanner = new Scanner(System.in);
-//    printPowersOf2(scanner.nextInt());
-//        runAvgUntilMethod();
-//        gamerMoreLessInitiate();
-
-//        Random random = new Random();
-//        int zmienna = random.nextInt(100);
-//        System.out.println("Kroki: " +   gameBotMoreLess(zmienna) );
-//        System.out.println(zmienna);
-        //DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-
-        pojedynekBotow();
+        botsChalanage();
 
     }
 
-public static void uruchomienieBotow(){
+public static void runBots(){
 
     long StartTime = System.currentTimeMillis();
-    System.out.println("Srednia ilosc krokow na " + 1000000 + " gier = " + GrajacyBot(1000000));
+    System.out.println("Average steps for " + 1000000 + " games = " + playMyBot(1000000));
     long EndTime = System.currentTimeMillis();
-    System.out.println("Czas wykonania Moje Bota: " + ((double) (EndTime - StartTime) / 1000) + "sek");
+    System.out.println("Time of running my bot: " + ((double) (EndTime - StartTime) / 1000) + "sek");
 
     StartTime = System.currentTimeMillis();
-    System.out.println("Srednia ilosc krokow na " + 1000000 + " gier = " + GrajacyWhileBot(1000000));
+    System.out.println("Average steps for " + 1000000 + " games = " + playWhileBot(1000000));
     EndTime = System.currentTimeMillis();
-    System.out.println("Czas wykonania While Bota: " + ((double) (EndTime - StartTime) / 1000) + "sek");
+    System.out.println("Time of running While bot: " + ((double) (EndTime - StartTime) / 1000) + "sek");
 
 
 }
 
 
 
-    public static void pojedynekBotow(){
-        double mojBotKrokow=0, whileBotKrokow=0;
+    public static void botsChalanage(){
+        double myBotSteps=0, whileBotSteps=0;
         for (int i = 0; i < 100; i++) {
-            mojBotKrokow += GrajacyBot(100000);
-            whileBotKrokow += GrajacyWhileBot(100000);
+            myBotSteps += playMyBot(100000);
+            whileBotSteps += playWhileBot(100000);
 
         }
-        System.out.println("Wynik mojego bota: " + mojBotKrokow/1000);
-        System.out.println("Wynik while bota: " + whileBotKrokow/1000);
+
+        System.out.println("Result of my bot: " + myBotSteps/1000);
+        System.out.println("Result of while bot: " + whileBotSteps/1000);
     }
 
 
     public static int gameWhileMoreLess(int x) {
         int l, p, s;
-        int krokow = 0;
+        int steps = 0;
         int[] a = new int[100];
         for (int i=0; i<100; i++) {
             a[i] = i+1;
@@ -66,171 +54,133 @@ public static void uruchomienieBotow(){
         l = 0;
         p = 100 - 1;
         while (l <= p) {
-            krokow++;
+            steps++;
             s = (l + p) / 2;
             if (a[s] == x) {
-                System.out.println("Odnaleziono element " + x + " pod indeksem " + s);
-                return krokow;
+                return steps;
             }
             if (a[s] < x)
                 l = s + 1;
             else
                 p = s - 1;
         }
-        System.out.println("Nie odnaleziono w tablicy elementu " + x);
-return krokow;
+return steps;
     }
 
 
-    public static double GrajacyWhileBot(int ilegier){
+    public static double playWhileBot(int gameAmount){
 
-        int suma = 0;
-        int krokow;
-        int[] ileKrokowCounter = new int[50];
-        for (int i = 0; i < ilegier; i++) {
+        int sum = 0;
+        int steps;
+        int[] stepsCounter = new int[50];
+        for (int i = 0; i < gameAmount; i++) {
             Random random = new Random();
-            int zmienna = random.nextInt(100);
-            krokow = gameBotMoreLess(zmienna);
-            suma += krokow;
-            ileKrokowCounter[krokow] += 1;
+            int amount = random.nextInt(100);
+            steps = gameWhileMoreLess(amount);
+            sum += steps;
+            stepsCounter[steps] += 1;
         }
 
-//        for (int i = 0; i < ileKrokowCounter.length; i++) {
-//            if (ileKrokowCounter[i] != 0) {
-//                System.out.println("Ilosc Krokow: " + i + " wystapila: " + ileKrokowCounter[i] + " razy");
-//            }
-//        }
 
 
-return ((double) suma / ilegier);
+return ((double) sum / gameAmount);
 
     }
 
 
 
-    public static double GrajacyBot(int ilegier) {
-        int suma = 0;
-        int krokow;
-//        int[] ileKrokow = new int[30];
-        int[] ileKrokowCounter = new int[50];
-//        int countrminkrokow = 0;
-//        int countmaxkrokow = 0;
-//        int maxkrokow = 0;
-//        int minkrokow = 100;
-        for (int i = 0; i < ilegier; i++) {
+    public static double playMyBot(int gameAmount) {
+        int sum = 0;
+        int steps;
+        int[] stepsCounter = new int[50];
+        for (int i = 0; i < gameAmount; i++) {
             Random random = new Random();
-            int zmienna = random.nextInt(100);
-            krokow = gameBotMoreLess(zmienna);
-            suma += krokow;
-//            ileKrokow[krokow] +=krokow;
-            ileKrokowCounter[krokow] += 1;
-//            if (krokow >= maxkrokow) {
-//                maxkrokow = krokow;
-//                countmaxkrokow++;
-//
-//            }
-//            if (krokow <= minkrokow) {
-//                minkrokow = krokow;
-//                countrminkrokow++;
-//
-//            }
+            int amount = random.nextInt(100);
+            steps = gameBotMoreLess(amount);
+            sum += steps;
+            stepsCounter[steps] += 1;
         }
-//
-//        System.out.println("Srednia ilosc krokow na " + ilegier + " gier = " + (double) suma / ilegier);
-//        System.out.println("Minimalna wartosc: " + minkrokow + " wystapila: " + countrminkrokow + " razy");
-//        System.out.println("Maksymalna wartosc: " + maxkrokow + " wystapila: " + countmaxkrokow + " razy");
-//        for (int i = 0; i < ileKrokowCounter.length; i++) {
-//            if (ileKrokowCounter[i] != 0) {
-//                System.out.println("Ilosc Krokow: " + i + " wystapila: " + ileKrokowCounter[i] + " razy");
-//            }
-//        }
-        return ((double) suma / ilegier);
+        return ((double) sum / gameAmount);
     }
 
 
-    public static int[] BOT(boolean result, int lastnumber, int mniejszanajwieksza, int[] tablicawynikow, int kroki, int wiekszamniejsza) {
+    public static int[] BOT(boolean result, int lastNumber, int lowerBigger, int[] tableOfResults, int steps, int biggerLower) {
         Random random = new Random();
-        int[] tablica = {0, 0, 0};
-        boolean truefalse = true;
-//        System.out.println("Start - LastNumber: " + lastnumber + " Mniejszawieksza: " + mniejszanajwieksza + " Wiekszamniejsza: " + wiekszamniejsza);
-        while (truefalse) {
-            truefalse = false;
+        int[] table = {0, 0, 0};
+        boolean trueFalse = true;
+        while (trueFalse) {
+            trueFalse = false;
             if (result == false) {
-                tablica[0] = random.nextInt(mniejszanajwieksza - lastnumber) + lastnumber;
-//                System.out.println("mniejsze( "+ mniejszanajwieksza+  " - " + lastnumber + " ) +" + lastnumber);
-                tablica[1] = mniejszanajwieksza;
-                tablica[2] = lastnumber;
+                table[0] = random.nextInt(lowerBigger - lastNumber) + lastNumber;
+                table[1] = lowerBigger;
+                table[2] = lastNumber;
             } else {
-                tablica[0] = random.nextInt(lastnumber - wiekszamniejsza) + wiekszamniejsza;
-//                System.out.println("wieksze(" + mniejszanajwieksza + " - " +wiekszamniejsza + " ) +" + wiekszamniejsza);
-                tablica[1] = lastnumber;
-                tablica[2] = wiekszamniejsza;
+                table[0] = random.nextInt(lastNumber - biggerLower) + biggerLower;
+                table[1] = lastNumber;
+                table[2] = biggerLower;
             }
-            for (int i = 0; i < tablicawynikow.length - 1; i++) {
-                if (tablicawynikow[i] == tablica[0] && tablica[0] != 0) {
-                    truefalse = true;
+            for (int i = 0; i < tableOfResults.length - 1; i++) {
+                if (tableOfResults[i] == table[0] && table[0] != 0) {
+                    trueFalse = true;
                 }
             }
         }
-//        System.out.println("End - Random: " + tablica[0] + " Mniejszawieksza: " + tablica[1] + " Wiekszamniejsza: " + tablica[2]);
-        tablicawynikow[kroki] = tablica[0];
-        return tablica;
+        tableOfResults[steps] = table[0];
+        return table;
     }
 
 
     public static int gameBotMoreLess(int number) {
-//        System.out.println("Number to search: " + number);
         Random random = new Random();
-        int kroki = 0;
-        int lastnumber = 50;
-        int[] tablicawynikow = new int[80];
-        int[] tabelka;
+        int steps = 0;
+        int lastNumber = 50;
+        int[] tableOfResult = new int[80];
+        int[] table;
         boolean result;
-        int mniejszanajwieksza = 100;
-        int wiekszamniejsza = 0;
-        while (number != lastnumber) {
-            if (lastnumber > number) {
+        int lowerBigger = 100;
+        int biggerLower = 0;
+        while (number != lastNumber) {
+            if (lastNumber > number) {
                 result = true;
             } else {
                 result = false;
             }
-            tabelka = BOT(result, lastnumber, mniejszanajwieksza, tablicawynikow, kroki, wiekszamniejsza);
-            lastnumber = tabelka[0];
-            mniejszanajwieksza = tabelka[1];
-            wiekszamniejsza = tabelka[2];
-            kroki++;
+            table = BOT(result, lastNumber, lowerBigger, tableOfResult, steps, biggerLower);
+            lastNumber = table[0];
+            lowerBigger = table[1];
+            biggerLower = table[2];
+            steps++;
         }
-//        System.out.println("Kroki: " + kroki);
 
-        return kroki;
+        return steps;
     }
 
 
     public static void gamerMoreLessInitiate() {
 
         Random random = new Random();
-        int liczbakrokow = gameMoreLess(random.nextInt(100));
-        System.out.println("Zrobiles to w " + liczbakrokow + " krokach ");
+        int stepsCount = gameMoreLess(random.nextInt(100));
+        System.out.println("You did it in " + stepsCount + " steps ");
 
 
     }
 
     public static int gameMoreLess(int number) {
         //number 0-100
-        System.out.println("Moj number" + number);
-        int kroki = 0;
+        System.out.println("My number" + number);
+        int steps = 0;
         int usernumber = -1;
         Scanner scanner = new Scanner(System.in);
         while (number != usernumber) {
-            System.out.println("Podaj liczbe");
+            System.out.println("Give me number");
             usernumber = scanner.nextInt();
-            if (usernumber > number) System.out.println("Za duza liczba");
-            if (usernumber < number) System.out.println("Za mala liczba");
+            if (usernumber > number) System.out.println("Too big");
+            if (usernumber < number) System.out.println("Too low");
             System.out.println();
             System.out.println();
-            kroki++;
+            steps++;
         }
-        return kroki;
+        return steps;
     }
 
 
@@ -243,7 +193,7 @@ return ((double) suma / ilegier);
 //
         int suma = random.nextInt(85) + 15;
 
-        System.out.println("Liczba graniczna: " + suma);
+        System.out.println("Sum: " + suma);
         System.out.println(avgUntil(array, suma));
 
 
