@@ -37,14 +37,31 @@ public class Zajecia6 {
     public static void GrajacyBot(int ilegier) {
         int suma = 0;
         int krokow;
+        int countrminkrokow = 0;
+        int countmaxkrokow = 0;
+        int maxkrokow=0;
+        int minkrokow=100;
         for (int i = 0; i < ilegier; i++) {
             Random random = new Random();
             int zmienna = random.nextInt(100);
             krokow = gameBotMoreLess(zmienna);
             suma += krokow;
+            if (krokow >= maxkrokow) {
+                maxkrokow = krokow;
+                countmaxkrokow++;
+
+            }
+            if (krokow <= minkrokow) {
+                minkrokow = krokow;
+                countrminkrokow++;
+
+            }
         }
 
         System.out.println("Srednia ilosc krokow na " + ilegier + " gier = " + (double) suma / ilegier);
+        System.out.println("Minimalna wartosc: " +minkrokow + " wystapila: " +countrminkrokow + " razy");
+        System.out.println("Maksymalna wartosc: " +maxkrokow + " wystapila: " +countmaxkrokow + " razy");
+
     }
 
 
@@ -60,14 +77,11 @@ public class Zajecia6 {
 //                System.out.println("mniejsze( "+ mniejszanajwieksza+  " - " + lastnumber + " ) +" + lastnumber);
                 tablica[1] = mniejszanajwieksza;
                 tablica[2] = lastnumber;
-
-
             } else {
                 tablica[0] = random.nextInt(lastnumber - wiekszamniejsza) + wiekszamniejsza;
 //                System.out.println("wieksze(" + mniejszanajwieksza + " - " +wiekszamniejsza + " ) +" + wiekszamniejsza);
                 tablica[1] = lastnumber;
                 tablica[2] = wiekszamniejsza;
-
             }
             for (int i = 0; i < tablicawynikow.length - 1; i++) {
                 if (tablicawynikow[i] == tablica[0] && tablica[0] != 0) {
@@ -78,30 +92,28 @@ public class Zajecia6 {
 //        System.out.println("End - Random: " + tablica[0] + " Mniejszawieksza: " + tablica[1] + " Wiekszamniejsza: " + tablica[2]);
         tablicawynikow[kroki] = tablica[0];
         return tablica;
-
-
     }
+
+
 
     public static int gameBotMoreLess(int number) {
 //        System.out.println("Number to search: " + number);
         Random random = new Random();
         int kroki = 0;
-        int usernumber = random.nextInt(100);
-        int lastnumber = usernumber;
+        int lastnumber =50;
         int[] tablicawynikow = new int[80];
         int[] tabelka;
-        boolean result = false;
+        boolean result;
         int mniejszanajwieksza = 100;
         int wiekszamniejsza = 0;
-        while (number != usernumber) {
-            if (usernumber > number) {
+        while (number != lastnumber) {
+            if (lastnumber > number) {
                 result = true;
             } else {
                 result = false;
             }
             tabelka = BOT(result, lastnumber, mniejszanajwieksza, tablicawynikow, kroki, wiekszamniejsza);
-            lastnumber = usernumber = tabelka[0];
-//             usernumber;
+            lastnumber =  tabelka[0];
             mniejszanajwieksza = tabelka[1];
             wiekszamniejsza = tabelka[2];
             kroki++;
