@@ -29,11 +29,9 @@ public class Zajecia6 {
 //        System.out.println(zmienna);
         //DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         long StartTime = System.currentTimeMillis();
-//        System.out.println(StartTime);
         GrajacyBot(1000000);
         long EndTime = System.currentTimeMillis();
-//        Date EndTime = new Date();
-        System.out.println("Czas wykonania: " + ((double)(EndTime-StartTime)/1000) + "sek" );
+        System.out.println("Czas wykonania: " + ((double) (EndTime - StartTime) / 1000) + "sek");
     }
 
     public static void GrajacyBot(int ilegier) {
@@ -50,14 +48,14 @@ public class Zajecia6 {
     }
 
 
-    public static int[] BOT(int result, int lastnumber, int mniejszanajwieksza, int[] tablicawynikow, int kroki, int wiekszamniejsza) {
+    public static int[] BOT(boolean result, int lastnumber, int mniejszanajwieksza, int[] tablicawynikow, int kroki, int wiekszamniejsza) {
         Random random = new Random();
         int[] tablica = {0, 0, 0};
         boolean truefalse = true;
-//        System.out.println("Start - LastNumber " + lastnumber + " Mniejszawieksza: " + mniejszanajwieksza + " Wiekszamniejsza: " + wiekszamniejsza);
+//        System.out.println("Start - LastNumber: " + lastnumber + " Mniejszawieksza: " + mniejszanajwieksza + " Wiekszamniejsza: " + wiekszamniejsza);
         while (truefalse) {
             truefalse = false;
-            if (result == 0) {
+            if (result == false) {
                 tablica[0] = random.nextInt(mniejszanajwieksza - lastnumber) + lastnumber;
 //                System.out.println("mniejsze( "+ mniejszanajwieksza+  " - " + lastnumber + " ) +" + lastnumber);
                 tablica[1] = mniejszanajwieksza;
@@ -65,8 +63,6 @@ public class Zajecia6 {
 
 
             } else {
-
-                // if ((mniejszanajwieksza - wiekszamniejsza) == 0) mniejszanajwieksza += 1;
                 tablica[0] = random.nextInt(lastnumber - wiekszamniejsza) + wiekszamniejsza;
 //                System.out.println("wieksze(" + mniejszanajwieksza + " - " +wiekszamniejsza + " ) +" + wiekszamniejsza);
                 tablica[1] = lastnumber;
@@ -79,7 +75,6 @@ public class Zajecia6 {
                 }
             }
         }
-//        if (tablica[1] == 0) tablica[1] =1;
 //        System.out.println("End - Random: " + tablica[0] + " Mniejszawieksza: " + tablica[1] + " Wiekszamniejsza: " + tablica[2]);
         tablicawynikow[kroki] = tablica[0];
         return tablica;
@@ -95,20 +90,24 @@ public class Zajecia6 {
         int lastnumber = usernumber;
         int[] tablicawynikow = new int[80];
         int[] tabelka;
-        int result = 0;
+        boolean result = false;
         int mniejszanajwieksza = 100;
         int wiekszamniejsza = 0;
         while (number != usernumber) {
-            if (usernumber > number) result = 1;
-            if (usernumber < number) result = 0;
+            if (usernumber > number) {
+                result = true;
+            } else {
+                result = false;
+            }
             tabelka = BOT(result, lastnumber, mniejszanajwieksza, tablicawynikow, kroki, wiekszamniejsza);
-            usernumber = tabelka[0];
-            lastnumber = usernumber;
+            lastnumber = usernumber = tabelka[0];
+//             usernumber;
             mniejszanajwieksza = tabelka[1];
             wiekszamniejsza = tabelka[2];
             kroki++;
         }
 //        System.out.println("Kroki: " + kroki);
+
         return kroki;
     }
 
