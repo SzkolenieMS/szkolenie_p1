@@ -2,8 +2,12 @@ package zajecia;
 
 import jdk.nashorn.internal.objects.Global;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.Timer;
 
 /**
  * Created by RENT on 2017-04-11.
@@ -23,7 +27,13 @@ public class Zajecia6 {
 //        int zmienna = random.nextInt(100);
 //        System.out.println("Kroki: " +   gameBotMoreLess(zmienna) );
 //        System.out.println(zmienna);
+        //DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        long StartTime = System.currentTimeMillis();
+//        System.out.println(StartTime);
         GrajacyBot(1000000);
+        long EndTime = System.currentTimeMillis();
+//        Date EndTime = new Date();
+        System.out.println("Czas wykonania: " + ((double)(EndTime-StartTime)/1000) + "sek" );
     }
 
     public static void GrajacyBot(int ilegier) {
