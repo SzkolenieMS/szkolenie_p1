@@ -1,5 +1,7 @@
 package zajecia;
 
+import jdk.nashorn.internal.objects.Global;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -16,26 +18,68 @@ public class Zajecia6 {
 //    printPowersOf2(scanner.nextInt());
 //        runAvgUntilMethod();
 //        gamerMoreLessInitiate();
-        System.out.println("Kroki: " +   gameBotMoreLess(15) );
+
+//        Random random = new Random();
+//        int zmienna = random.nextInt(100);
+//        System.out.println("Kroki: " +   gameBotMoreLess(zmienna) );
+//        System.out.println(zmienna);
+
+        System.out.println("Srednia ilosc krokow na sto gier = " +stoGier()/10000);
+    }
+    //30
+    //7
+
+    public static int stoGier(){
+int suma = 0;
+int krokow = 0;
+        for (int i = 0; i < 10000; i++) {
+
+
+            Random random = new Random();
+            int zmienna = random.nextInt(100);
+            krokow = gameBotMoreLess(zmienna);
+            suma += krokow;
+        }
+        return suma;
     }
 
-public static int BOT(int number, int lastnumber){
+
+public static int[] BOT(int number, int lastnumber, int mniejszanajwieksza, int[] tablicawynikow, int kroki){
         Random random = new Random();
         int randomik = 0;
-        if (lastnumber < 0) lastnumber *= -1;
-        if (lastnumber < 2) lastnumber+=20;
+        int[] tablica ={0,0};
+        int j = 0;
+        boolean truefalse = true;
+       // if (lastnumber < 0) lastnumber *= -1;
+       // if (lastnumber < 2) lastnumber+=20;
+    while (truefalse){
+//        j++;
+        truefalse = false;
         if (number == 0 ){
-             randomik = random.nextInt(lastnumber)+(100-lastnumber);
-            System.out.println("Randomik: " + randomik);
-            return randomik;
+            tablica[0] = random.nextInt(mniejszanajwieksza-lastnumber)+lastnumber;
+            tablica[1]= mniejszanajwieksza;
+//            System.out.println("Randomik bo za male: " + tablica[0] + " last " + lastnumber + " mniej " + mniejszanajwieksza);
+
 
         }else
     {
-        randomik = random.nextInt(100-lastnumber)+lastnumber;
-        System.out.println("Randomik: " + randomik);
-        return randomik;
+        if (lastnumber < mniejszanajwieksza) tablica[1]= lastnumber;
+        tablica[0] = random.nextInt(lastnumber);
+                //+(100-lastnumber);
+
+//        System.out.println("Randomik bo za duze: " + tablica[0]);
 
     }
+        for (int i = 0; i <tablicawynikow.length-1 ; i++) {
+            if (tablicawynikow[i] == tablica[0] && tablica[0] != 0) {
+                truefalse = true;
+            }
+        }
+//    if (j>20) break;
+    }
+
+    tablicawynikow[kroki] = tablica[0];
+    return tablica;
 //    System.out.println(lastnumber + "last");
 
 
@@ -43,20 +87,26 @@ public static int BOT(int number, int lastnumber){
 }
     public static int gameBotMoreLess(int number){
 
-        System.out.println("Moj number" + number);
+//        System.out.println("Moj number" + number);
         int kroki = 0;
         int lastnumber = 1;
         int usernumber = -1;
+        int[] tablicawynikow = new int[50];
+        int[] tabelka ;
         int result = 0;
+        int mniejszanajwieksza = 100+1;
         while (number != usernumber){
-            usernumber = BOT(result, lastnumber);
+            tabelka = BOT(result, lastnumber, mniejszanajwieksza,tablicawynikow, kroki);
+            usernumber = tabelka[0];
             lastnumber = usernumber;
-            System.out.println("shot:" + usernumber);
+            mniejszanajwieksza = tabelka[1];
+//            System.out.println("shot:" + usernumber);
             //if (usernumber > number) lastnumber;
             kroki++;
             if (usernumber > number) result = 1;
             if (usernumber < number) result = 0;
             if (usernumber>1001 || usernumber<-1000) break;
+            if (kroki> 100) break;
         }
         return kroki;
     }
@@ -99,7 +149,10 @@ public static int BOT(int number, int lastnumber){
         Random random = new Random();
         int [] array = Zajecia5.getRandomlowArray(random.nextInt(10)+15);
         ZajecieCztery.displayArray(array);
-        int suma = random.nextInt(1)+10;
+//        int suma = random.nextInt(1)+10;
+//
+        int suma = random.nextInt(85)+15;
+
         System.out.println("Liczba graniczna: " + suma);
         System.out.println(avgUntil(array,suma));
 
