@@ -1,13 +1,7 @@
 package zajecia;
 
-import jdk.nashorn.internal.objects.Global;
-
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.Timer;
 
 /**
  * Created by RENT on 2017-04-11.
@@ -28,40 +22,129 @@ public class Zajecia6 {
 //        System.out.println("Kroki: " +   gameBotMoreLess(zmienna) );
 //        System.out.println(zmienna);
         //DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-        long StartTime = System.currentTimeMillis();
-        GrajacyBot(1000000);
-        long EndTime = System.currentTimeMillis();
-        System.out.println("Czas wykonania: " + ((double) (EndTime - StartTime) / 1000) + "sek");
+
+        pojedynekBotow();
+
     }
 
-    public static void GrajacyBot(int ilegier) {
+public static void uruchomienieBotow(){
+
+    long StartTime = System.currentTimeMillis();
+    System.out.println("Srednia ilosc krokow na " + 1000000 + " gier = " + GrajacyBot(1000000));
+    long EndTime = System.currentTimeMillis();
+    System.out.println("Czas wykonania Moje Bota: " + ((double) (EndTime - StartTime) / 1000) + "sek");
+
+    StartTime = System.currentTimeMillis();
+    System.out.println("Srednia ilosc krokow na " + 1000000 + " gier = " + GrajacyWhileBot(1000000));
+    EndTime = System.currentTimeMillis();
+    System.out.println("Czas wykonania While Bota: " + ((double) (EndTime - StartTime) / 1000) + "sek");
+
+
+}
+
+
+
+    public static void pojedynekBotow(){
+        double mojBotKrokow=0, whileBotKrokow=0;
+        for (int i = 0; i < 100; i++) {
+            mojBotKrokow += GrajacyBot(100000);
+            whileBotKrokow += GrajacyWhileBot(100000);
+
+        }
+        System.out.println("Wynik mojego bota: " + mojBotKrokow/1000);
+        System.out.println("Wynik while bota: " + whileBotKrokow/1000);
+    }
+
+
+    public static int gameWhileMoreLess(int x) {
+        int l, p, s;
+        int krokow = 0;
+        int[] a = new int[100];
+        for (int i=0; i<100; i++) {
+            a[i] = i+1;
+        }
+        l = 0;
+        p = 100 - 1;
+        while (l <= p) {
+            krokow++;
+            s = (l + p) / 2;
+            if (a[s] == x) {
+                System.out.println("Odnaleziono element " + x + " pod indeksem " + s);
+                return krokow;
+            }
+            if (a[s] < x)
+                l = s + 1;
+            else
+                p = s - 1;
+        }
+        System.out.println("Nie odnaleziono w tablicy elementu " + x);
+return krokow;
+    }
+
+
+    public static double GrajacyWhileBot(int ilegier){
+
         int suma = 0;
         int krokow;
-        int countrminkrokow = 0;
-        int countmaxkrokow = 0;
-        int maxkrokow=0;
-        int minkrokow=100;
+        int[] ileKrokowCounter = new int[50];
         for (int i = 0; i < ilegier; i++) {
             Random random = new Random();
             int zmienna = random.nextInt(100);
             krokow = gameBotMoreLess(zmienna);
             suma += krokow;
-            if (krokow >= maxkrokow) {
-                maxkrokow = krokow;
-                countmaxkrokow++;
-
-            }
-            if (krokow <= minkrokow) {
-                minkrokow = krokow;
-                countrminkrokow++;
-
-            }
+            ileKrokowCounter[krokow] += 1;
         }
 
-        System.out.println("Srednia ilosc krokow na " + ilegier + " gier = " + (double) suma / ilegier);
-        System.out.println("Minimalna wartosc: " +minkrokow + " wystapila: " +countrminkrokow + " razy");
-        System.out.println("Maksymalna wartosc: " +maxkrokow + " wystapila: " +countmaxkrokow + " razy");
+//        for (int i = 0; i < ileKrokowCounter.length; i++) {
+//            if (ileKrokowCounter[i] != 0) {
+//                System.out.println("Ilosc Krokow: " + i + " wystapila: " + ileKrokowCounter[i] + " razy");
+//            }
+//        }
 
+
+return ((double) suma / ilegier);
+
+    }
+
+
+
+    public static double GrajacyBot(int ilegier) {
+        int suma = 0;
+        int krokow;
+//        int[] ileKrokow = new int[30];
+        int[] ileKrokowCounter = new int[50];
+//        int countrminkrokow = 0;
+//        int countmaxkrokow = 0;
+//        int maxkrokow = 0;
+//        int minkrokow = 100;
+        for (int i = 0; i < ilegier; i++) {
+            Random random = new Random();
+            int zmienna = random.nextInt(100);
+            krokow = gameBotMoreLess(zmienna);
+            suma += krokow;
+//            ileKrokow[krokow] +=krokow;
+            ileKrokowCounter[krokow] += 1;
+//            if (krokow >= maxkrokow) {
+//                maxkrokow = krokow;
+//                countmaxkrokow++;
+//
+//            }
+//            if (krokow <= minkrokow) {
+//                minkrokow = krokow;
+//                countrminkrokow++;
+//
+//            }
+        }
+//
+//        System.out.println("Srednia ilosc krokow na " + ilegier + " gier = " + (double) suma / ilegier);
+//        System.out.println("Minimalna wartosc: " + minkrokow + " wystapila: " + countrminkrokow + " razy");
+//        System.out.println("Maksymalna wartosc: " + maxkrokow + " wystapila: " + countmaxkrokow + " razy");
+//        for (int i = 0; i < ileKrokowCounter.length; i++) {
+//            if (ileKrokowCounter[i] != 0) {
+//                System.out.println("Ilosc Krokow: " + i + " wystapila: " + ileKrokowCounter[i] + " razy");
+//            }
+//        }
+        return ((double) suma / ilegier);
     }
 
 
@@ -95,12 +178,11 @@ public class Zajecia6 {
     }
 
 
-
     public static int gameBotMoreLess(int number) {
 //        System.out.println("Number to search: " + number);
         Random random = new Random();
         int kroki = 0;
-        int lastnumber =50;
+        int lastnumber = 50;
         int[] tablicawynikow = new int[80];
         int[] tabelka;
         boolean result;
@@ -113,7 +195,7 @@ public class Zajecia6 {
                 result = false;
             }
             tabelka = BOT(result, lastnumber, mniejszanajwieksza, tablicawynikow, kroki, wiekszamniejsza);
-            lastnumber =  tabelka[0];
+            lastnumber = tabelka[0];
             mniejszanajwieksza = tabelka[1];
             wiekszamniejsza = tabelka[2];
             kroki++;
