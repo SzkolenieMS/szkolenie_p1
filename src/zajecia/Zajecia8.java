@@ -7,10 +7,14 @@ public class Zajecia8 {
     public static void main(String[] args) {
 //        System.out.println(toUpperCase("test"));
 //        System.out.println(sumNumbersPremium("test 12 test 333 "));
-        System.out.println(subString("123456789ala ma konta", 4));
-        System.out.println(subString("123456789ala ma konta", 4, 7));
-
+//        System.out.println(subString("123456789ala ma konta", 4));
+//        System.out.println(subString("123456789ala ma konta", 4, 7));
+        System.out.println(sumNumbers("test 123 test"));
     }
+
+
+
+
 
 
     public static String subString(String message, int startIndex) {
@@ -66,7 +70,7 @@ public class Zajecia8 {
         int sum = 0;
         for (int i = 0; i < charArray.length; i++) {
             if (charArray[i] >= 48 && charArray[i] <= 57) {
-                sum += (int) charArray[i];
+                sum += charArray[i] - 48;
             }
         }
         return sum;
