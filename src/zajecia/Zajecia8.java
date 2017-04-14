@@ -6,19 +6,51 @@ package zajecia;
 public class Zajecia8 {
     public static void main(String[] args) {
 //        System.out.println(toUpperCase("test"));
-        System.out.println(sumNumbersPremium("test 12 test 333 "));
+//        System.out.println(sumNumbersPremium("test 12 test 333 "));
+        System.out.println(subString("123456789ala ma konta", 4));
+        System.out.println(subString("123456789ala ma konta", 4, 7));
 
     }
 
 
-    public static int sumNumbersPremium(String message){
+    public static String subString(String message, int startIndex) {
+
+        char[] charArray = message.toCharArray();
+        char[] newCharArray = new char[charArray.length];
+        for (int i = startIndex; i < message.length(); i++) {
+            newCharArray[i - startIndex + 1] = charArray[i];
+
+        }
+
+        return new String(newCharArray);
+    }
+
+
+    public static String subString(String message, int startIndex, int endIndex) {
+        if (endIndex < startIndex) {
+            System.out.println("Error");
+            return null;
+        }
+        char[] charArray = message.toCharArray();
+        char[] newCharArray = new char[charArray.length];
+        for (int i = startIndex; i < endIndex; i++) {
+            newCharArray[i - startIndex + 1] = charArray[i];
+
+        }
+
+        return new String(newCharArray);
+
+    }
+
+
+    public static int sumNumbersPremium(String message) {
         char[] charArray = message.toCharArray();
         String numberString;
         int sum = 0;
         for (int i = 0; i < charArray.length; i++) {
             if (charArray[i] >= 48 && charArray[i] <= 57) {
                 numberString = "";
-                while(charArray[i] >= 48 && charArray[i] <= 57){
+                while (charArray[i] >= 48 && charArray[i] <= 57) {
                     numberString += charArray[i];
                     i++;
                 }
@@ -26,20 +58,15 @@ public class Zajecia8 {
             }
         }
         return sum;
-
-
     }
 
 
-
-
-
-    public static int sumNumbers(String message){
+    public static int sumNumbers(String message) {
         char[] charArray = message.toCharArray();
         int sum = 0;
         for (int i = 0; i < charArray.length; i++) {
             if (charArray[i] >= 48 && charArray[i] <= 57) {
-                sum += (int)charArray[i];
+                sum += (int) charArray[i];
             }
         }
         return sum;
@@ -47,7 +74,7 @@ public class Zajecia8 {
 
     }
 
-    public static String toLowerCase(String message){
+    public static String toLowerCase(String message) {
         char[] charArray = message.toCharArray();
         if (charArray[0] >= 65 && charArray[0] <= 90) {
             charArray[0] += 32;
@@ -56,21 +83,22 @@ public class Zajecia8 {
     }
 
 
-    public static String toUpperCase(String message){
+    public static String toUpperCase(String message) {
         char[] charArray = message.toCharArray();
-            if (charArray[0] >= 97 && charArray[0] <= 122) {
-                charArray[0] -= 32;
-            }
+        if (charArray[0] >= 97 && charArray[0] <= 122) {
+            charArray[0] -= 32;
+//            charArray[0] = charArray[0] - 32;
+        }
         return new String(charArray);
 
     }
 
-    public static boolean startsWith(String message, String someValue){
+    public static boolean startsWith(String message, String someValue) {
         char[] charArray = message.toCharArray();
         char[] someValueArray = someValue.toCharArray();
-        char[] newCharArray= new char[someValueArray.length];
-        for (int i = 0; i <someValueArray.length ; i++) {
-            newCharArray[i] =charArray[i] ;
+        char[] newCharArray = new char[someValueArray.length];
+        for (int i = 0; i < someValueArray.length; i++) {
+            newCharArray[i] = charArray[i];
         }
         return newCharArray == someValueArray;
     }
@@ -80,7 +108,7 @@ public class Zajecia8 {
         char[] charArray = message.toCharArray();
         char[] newArray = new char[charArray.length];
         for (int i = 0; i < charArray.length; i++) {
-            newArray[i] = charArray[charArray.length - i-1];
+            newArray[i] = charArray[charArray.length - i - 1];
         }
         return charArray == newArray;
     }
@@ -89,7 +117,7 @@ public class Zajecia8 {
     public static String ananimOf(String message) {
         char[] charArray = message.toCharArray();
         for (int i = 0; i < charArray.length; i++) {
-            charArray[i] = charArray[charArray.length - i-1];
+            charArray[i] = charArray[charArray.length - i - 1];
         }
         return new String(charArray);
     }
