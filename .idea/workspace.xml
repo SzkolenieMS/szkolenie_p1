@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7698f13-3648-481d-bbe9-528ba606ce59" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zajecia/Zajecia10.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zajecia/WheelAndCross.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zajecia/Zajecia10.java" afterPath="$PROJECT_DIR$/src/zajecia/Zajecia10.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +20,7 @@
       <file leaf-file-name="Zajecia8.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia8.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2103">
+            <state relative-caret-position="833">
               <caret line="49" column="22" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
               <folding />
             </state>
@@ -29,7 +30,7 @@
       <file leaf-file-name="Zajecia6.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia6.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3774">
+            <state relative-caret-position="3315">
               <caret line="223" column="0" lean-forward="true" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
               <folding />
             </state>
@@ -39,8 +40,8 @@
       <file leaf-file-name="Zajecia7.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia7.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="108" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+            <state relative-caret-position="277">
+              <caret line="135" column="9" lean-forward="true" selection-start-line="124" selection-start-column="52" selection-end-line="135" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -49,18 +50,28 @@
       <file leaf-file-name="Zajecia9.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia9.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-794">
+            <state relative-caret-position="136">
               <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Zajecia10.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Zajecia10.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia10.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="88" column="57" lean-forward="false" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="57" />
+            <state relative-caret-position="221">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WheelAndCross.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/zajecia/WheelAndCross.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -91,6 +102,7 @@
         <option value="$PROJECT_DIR$/src/zajecia/Zajecia8.java" />
         <option value="$PROJECT_DIR$/src/zajecia/Zajecia9.java" />
         <option value="$PROJECT_DIR$/src/zajecia/Zajecia10.java" />
+        <option value="$PROJECT_DIR$/src/zajecia/WheelAndCross.java" />
       </list>
     </option>
   </component>
@@ -181,27 +193,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Zajecia10">
-    <configuration default="false" name="Zajecia6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="zajecia.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="zajecia.Zajecia6" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="szkolenie_p1" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.WheelAndCross">
     <configuration default="false" name="Zajecia7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -270,6 +262,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="zajecia.Zajecia10" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="szkolenie_p1" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="WheelAndCross" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="zajecia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="zajecia.WheelAndCross" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -670,19 +682,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Zajecia6" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Zajecia7" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Zajecia8" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Zajecia9" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Zajecia10" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Zajecia7" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Zajecia8" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Zajecia9" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Zajecia10" />
+      <item index="4" class="java.lang.String" itemvalue="Application.WheelAndCross" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Zajecia10" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Zajecia9" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Zajecia8" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Zajecia7" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Zajecia6" />
+        <item index="0" class="java.lang.String" itemvalue="Application.WheelAndCross" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Zajecia10" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Zajecia9" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Zajecia8" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Zajecia7" />
       </list>
     </recent_temporary>
   </component>
@@ -703,15 +715,15 @@
       <workItem from="1492097734706" duration="9563000" />
       <workItem from="1492184130073" duration="2163000" />
       <workItem from="1492186592962" duration="5871000" />
-      <workItem from="1492703065742" duration="7290000" />
+      <workItem from="1492703065742" duration="10895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30259000" />
+    <option name="totallyTimeSpent" value="33864000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -724,7 +736,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21574803" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3055118" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -897,38 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3774">
-          <caret line="223" column="0" lean-forward="true" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia7.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="108" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia9.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-794">
-          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2103">
-          <caret line="49" column="22" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -939,8 +919,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia10.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="88" column="57" lean-forward="false" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="57" />
+        <state relative-caret-position="221">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="22" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3315">
+          <caret line="223" column="0" lean-forward="true" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="135" column="9" lean-forward="true" selection-start-line="124" selection-start-column="52" selection-end-line="135" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zajecia/Zajecia9.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zajecia/WheelAndCross.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
           <folding />
         </state>
       </provider>

@@ -13,9 +13,14 @@ public class Zajecia10 {
 
 //        int[] array= {1,2,3,4};
 //        printStringStatistics(array);
-        multipyDigits(1234);
+//        multipyDigits(1234);
+
+
+
 
     }
+
+
 
 
     public static String toBinary(int number){
