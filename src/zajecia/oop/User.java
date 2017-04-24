@@ -7,7 +7,18 @@ public class User {
     public String firstName;
     public String lastName;
     public String phoneNumber;
-    public String address;
+    public Address address;
     public int age;
+
+
+    public void display() {
+        System.out.println("Imie: " + firstName + ", nazwisko: " + lastName);
+        System.out.println("Numer telefonu" + phoneNumber + " wiek : " + age);
+        if (address != null) {
+            address.display();
+        } else {
+            System.out.println("Address not specified");
+        }
+    }
 
 }

@@ -14,6 +14,7 @@ public class Address {
         System.out.println("Miasto: " + city + " ulica " + street + " nr. " + flatNumber);
         System.out.println("Kod: " + postalCode + ", " + land);
 
+
     }
 
 }

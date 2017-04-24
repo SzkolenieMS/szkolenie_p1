@@ -9,17 +9,6 @@ public class Zajecia12 {
     public static void main(String[] args) {
 
 //        File file = new File("C:\\Users\\RENT\\IdeaProjects\\szkolenie_p1\\src\\file.txt");
-//        User user = new User();
-//        user.firstName = "Maciej";
-//
-//        user.lastName = "Siebert";
-//        user.phoneNumber = "123456";
-//        user.address = "Poznan, ul. Druga 123";
-//        user.age=40;
-//        System.out.println(user.firstName + " " + user.lastName + " age: " + user.age);
-//        System.out.println("Phone number " + user.phoneNumber);
-//        System.out.println("Address"  + user.address);
-
         Address adres = new Address();
         adres.postalCode = "30-300";
         adres.flatNumber = "12";
@@ -27,8 +16,19 @@ public class Zajecia12 {
         adres.city="Poznan";
         adres.land="Polska";
 
-        adres.display();
+//        adres.display();
+        User user = new User();
+        user.firstName = "Maciej";
 
+        user.lastName = "Siebert";
+        user.phoneNumber = "123456";
+        user.address = adres;
+        user.age=40;
+//        System.out.println(user.firstName + " " + user.lastName + " age: " + user.age);
+//        System.out.println("Phone number " + user.phoneNumber);
+//        System.out.println("Address"  + user.address);
+
+            user.display();
 
 
 
