@@ -16,18 +16,18 @@ public class WheelAndCross {
         for (int i = 0; i < 9; i++) {
             boolean inputFromUserFlag = false;
             displayBoard(gameBoard);
-            int position =0;
-            while(!inputFromUserFlag) {
+            int position = 0;
+            while (!inputFromUserFlag) {
                 System.out.println("Insert sign position");
                 position = scanner.nextInt();
                 inputFromUserFlag = validatePositionFromUser(position, gameBoard);
-                if(!inputFromUserFlag){
+                if (!inputFromUserFlag) {
                     System.out.println("Wrong positoon. Insert again.");
                 }
             }
 
             positionfromuser = convertPositon(position);
-            gameBoard[positionfromuser[0]][positionfromuser[1]] =( i%2==0)? 'X' :'O';
+            gameBoard[positionfromuser[0]][positionfromuser[1]] = (i % 2 == 0) ? 'X' : 'O';
             System.out.println();
             System.out.println();
             System.out.println();
@@ -40,17 +40,17 @@ public class WheelAndCross {
     }
 
 
-    public static boolean validatePositionFromUser(int positionFromUser, char[][] gameBoard){
+    public static boolean validatePositionFromUser(int positionFromUser, char[][] gameBoard) {
 
         int[] ints = convertPositon(positionFromUser);
 
-        return (positionFromUser>0 && positionFromUser<10 &&
-                isFieldEmpty(gameBoard,ints[0],ints[1])
+        return (positionFromUser > 0 && positionFromUser < 10 &&
+                isFieldEmpty(gameBoard, ints[0], ints[1])
         );
     }
 
-    public static boolean isFieldEmpty(char[][] gameBoard, int i, int j){
-        return !(gameBoard[i][j]== 'X' || gameBoard[i][j] =='O');
+    public static boolean isFieldEmpty(char[][] gameBoard, int i, int j) {
+        return !(gameBoard[i][j] == 'X' || gameBoard[i][j] == 'O');
     }
 
     public static int[] convertPositon(int positionFromUser) {
