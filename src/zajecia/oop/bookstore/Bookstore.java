@@ -18,18 +18,48 @@ public class Bookstore {
         boolean valueToReturn = false;
         if (size < 100) {
             books[size] = book;
+            size++;
             valueToReturn = true;
         }
         return valueToReturn;
     }
 
-    public void showBooks(){
+    public void showBooks() {
         for (int i = 0; i < size; i++) {
             System.out.println(books[i]);
 
         }
+    }
+
+    public int getNumberOfBooks(String author) {
+        int numberOfBooks = 0;
+
+        for (int i = 0; i < size; i++) {
+            if (books[i].author.equals(author)) {
+                numberOfBooks++;
+            }
+
+        }
+
+        return numberOfBooks;
+    }
+
+    public Book[] getBooks(String author) {
+        Book[] book = new Book[getNumberOfBooks(author)];
+        int index = 0;
+        for (int i = 0; i < this.size; i++) {
+            if (books[i].author.equals(author)) {
+                book[index] = books[i];
+                index++;
+            }
+
+        }
+
+        return book;
 
     }
 
 
 }
+
+

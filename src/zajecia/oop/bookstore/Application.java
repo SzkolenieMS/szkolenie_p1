@@ -8,8 +8,10 @@ public class Application {
         Bookstore bookstore = new Bookstore();
         inserExampleData(bookstore);
 //        bookstore.books
-        System.out.println(bookstore.books[0].toString());
-
+//        bookstore.showBooks();
+        Book[] booki = bookstore.getBooks("Maciej");
+        System.out.println(booki[1]);
+        System.out.println(booki[0]);
     }
 
     public static void inserExampleData(Bookstore bookstore) {
