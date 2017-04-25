@@ -2,6 +2,7 @@ package zajecia.oop.Quiz;
 
 import zajecia.oop.Quiz.question.MockQuestionsRepository;
 import zajecia.oop.Quiz.question.Question;
+import zajecia.oop.Quiz.result.MockResultsRepository;
 
 /**
  * Created by RENT on 2017-04-25.
@@ -11,6 +12,7 @@ public class Quiz {
 
         MockQuestionsRepository questionsRepository = new MockQuestionsRepository();
         QuizInterface quizInterface = new QuizInterface();
+        MockResultsRepository mockResultsRepository = new MockResultsRepository();
 
         int decision = quizInterface.menu();
         if (decision ==1 ) {
@@ -30,6 +32,10 @@ public class Quiz {
             }
 
             quizInterface.showResult(playerName,correctAnswerCounter);
+        } else {
+            quizInterface.showResults(mockResultsRepository.getAllResults());
+
+
         }
 
 

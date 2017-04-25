@@ -1,6 +1,7 @@
 package zajecia.oop.Quiz;
 
 import zajecia.oop.Quiz.question.Question;
+import zajecia.oop.Quiz.result.Result;
 
 import java.util.Scanner;
 
@@ -59,7 +60,15 @@ public class QuizInterface {
         System.out.println("Congratulation " + name + " you finished with score: " + result);
     }
 
+    public void showResults(Result[] results){
+        System.out.println("Hall of fame:");
+        for (int i = 0; i < results.length; i++) {
+            System.out.println((i+1) + ". " +
+            results[i].getPlayerName() + "\t" + results[i].getResult());
+        }
 
+        scanner.nextLine();
+    }
 
 
 }
