@@ -51,6 +51,7 @@ public class HelloWorld { //classa
         System.out.println("rm -rf nazwa_katalogu [rekursywne usuwanie]");
         System.out.println("alt+9 i ctrl+D - porowanie wersji");
         System.out.println("alt+insert - np. tworzenie konstruktora");
+        System.out.println("ctrl+alt+enter - pusta linia nad aktualna");
 
 
         System.out.println("git add . [dodanie wszystkich plikow]");
