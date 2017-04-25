@@ -1,4 +1,6 @@
-package zajecia.oop.Quiz.question;
+package zajecia.oop.Quiz;
+
+import zajecia.oop.Quiz.question.Question;
 
 import java.util.Scanner;
 

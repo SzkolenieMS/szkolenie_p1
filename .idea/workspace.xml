@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7698f13-3648-481d-bbe9-528ba606ce59" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/zajecia/oop/Quiz/MockQuestionsRepository.java" afterPath="$PROJECT_DIR$/src/zajecia/oop/Quiz/question/MockQuestionsRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/zajecia/oop/Quiz/Question.java" afterPath="$PROJECT_DIR$/src/zajecia/oop/Quiz/question/Question.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/zajecia/oop/Quiz/QuizInterface.java" afterPath="$PROJECT_DIR$/src/zajecia/oop/Quiz/question/QuizInterface.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/zajecia/oop/Quiz/question/QuizInterface.java" afterPath="$PROJECT_DIR$/src/zajecia/oop/Quiz/QuizInterface.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zajecia/oop/Quiz/Quiz.java" afterPath="$PROJECT_DIR$/src/zajecia/oop/Quiz/Quiz.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -61,20 +59,21 @@
         <entry file="file://$PROJECT_DIR$/src/zajecia/oop/Quiz/Quiz.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="QuizInterface.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/zajecia/oop/Quiz/question/QuizInterface.java">
+        <entry file="file://$PROJECT_DIR$/src/zajecia/oop/Quiz/QuizInterface.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
-                <element signature="e#191#192#0" expanded="true" />
-                <element signature="e#244#245#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,8 +138,8 @@
         <option value="$PROJECT_DIR$/src/zajecia/HelloWorld.java" />
         <option value="$PROJECT_DIR$/src/zajecia/oop/Quiz/Quiz.java" />
         <option value="$PROJECT_DIR$/src/zajecia/oop/Quiz/MockQuestionsRepository.java" />
-        <option value="$PROJECT_DIR$/src/zajecia/oop/Quiz/QuizInterface.java" />
         <option value="$PROJECT_DIR$/src/zajecia/oop/Quiz/question/QuizInterface.java" />
+        <option value="$PROJECT_DIR$/src/zajecia/oop/Quiz/QuizInterface.java" />
       </list>
     </option>
   </component>
@@ -407,7 +406,7 @@
     <configuration default="false" name="Quiz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="zajecia.oop.Quiz.question.*" />
+          <option name="PATTERN" value="zajecia.oop.Quiz.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -848,12 +847,12 @@
       <workItem from="1492703065742" duration="10913000" />
       <workItem from="1493048085182" duration="12052000" />
       <workItem from="1493134486802" duration="3683000" />
-      <workItem from="1493138424149" duration="5322000" />
+      <workItem from="1493138424149" duration="5356000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54939000" />
+    <option name="totallyTimeSpent" value="54973000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1268,7 +1267,7 @@
     <entry file="file://$PROJECT_DIR$/src/zajecia/oop/Quiz/Quiz.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1294,13 +1293,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zajecia/oop/Quiz/question/QuizInterface.java">
+    <entry file="file://$PROJECT_DIR$/src/zajecia/oop/Quiz/QuizInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
-            <element signature="e#191#192#0" expanded="true" />
-            <element signature="e#244#245#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
           </folding>
         </state>
       </provider>
