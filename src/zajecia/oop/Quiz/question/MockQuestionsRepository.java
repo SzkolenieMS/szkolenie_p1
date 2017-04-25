@@ -1,6 +1,4 @@
-package zajecia.oop.Quiz;
-
-import java.util.Arrays;
+package zajecia.oop.Quiz.question;
 
 /**
  * Created by RENT on 2017-04-25.
