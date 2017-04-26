@@ -8,7 +8,7 @@ public class MockResultsRepository {
     private Result[]results;
 
 
-    public MockResultsRepository(Result[] results) {
+    public MockResultsRepository() {
 
         this.results = new Result[4];
 
@@ -27,9 +27,15 @@ public class MockResultsRepository {
 
     public Result[] getTopResults (int n){
     //1. 123123123
+        Result[] resultsToReturn = new Result[n];
+        int loopSize = n<results.length ? n : results.length;
+
+        for (int i = 0; i < loopSize; i++) {
+            resultsToReturn[i] = results[i];
+        }
     //2. 12321312
     //3. 123123
-        return null;
+        return resultsToReturn;
     }
 
 }

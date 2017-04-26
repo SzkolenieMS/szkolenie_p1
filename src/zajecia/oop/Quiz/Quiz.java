@@ -13,35 +13,42 @@ public class Quiz {
         MockQuestionsRepository questionsRepository = new MockQuestionsRepository();
         QuizInterface quizInterface = new QuizInterface();
         MockResultsRepository mockResultsRepository = new MockResultsRepository();
+        boolean gameFlag = true;
+        while (gameFlag) {
+            int decision = quizInterface.menu();
+            switch (decision) {
+                case 1:
 
-        int decision = quizInterface.menu();
-        if (decision ==1 ) {
-            String playerName = quizInterface.insertName();
-            quizInterface.beforeStart();
-            Question[] questions = questionsRepository.getQuestions();
-            int correctAnswerCounter =0;
-            for (int i = 0; i < questions.length; i++) {
-                boolean result = quizInterface.showQuestion(questions[i]);
-                if (result){
-                    quizInterface.correctAnswer();
-                    correctAnswerCounter++;
-                } else {
-                    quizInterface.incorrectAnswer();
-                }
+                    String playerName = quizInterface.insertName();
+                    quizInterface.beforeStart();
+                    Question[] questions = questionsRepository.getQuestions();
+                    int correctAnswerCounter = 0;
+                    for (int i = 0; i < questions.length; i++) {
+                        boolean result = quizInterface.showQuestion(questions[i]);
+                        if (result) {
+                            quizInterface.correctAnswer();
+                            correctAnswerCounter++;
+                        } else {
+                            quizInterface.incorrectAnswer();
+                        }
+                    }
 
+                    quizInterface.showResult(playerName, correctAnswerCounter);
+                    break;
+                case 2:
+                    quizInterface.showTopResults(mockResultsRepository.getTopResults(10));
+                    break;
+                case 0:
+                    gameFlag = false;
+                    break;
+                default:
+                    System.out.println("Wrong number");
+                    break;
             }
-
-            quizInterface.showResult(playerName,correctAnswerCounter);
-        } else {
-            quizInterface.showResults(mockResultsRepository.getAllResults());
-
-
         }
-
+        quizInterface.afterGameEnded();
 
     }
-
-
 
 
 }
