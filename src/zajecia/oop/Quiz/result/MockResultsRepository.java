@@ -5,37 +5,42 @@ package zajecia.oop.Quiz.result;
  */
 public class MockResultsRepository {
 
-    private Result[]results;
+    private Result[] results;
+    private int resultsCounter=0;
 
 
     public MockResultsRepository() {
 
-        this.results = new Result[4];
-
-        results[0] = new Result("Maciej", 100);
-        results[1] = new Result("Jan",1);
-        results[2] = new Result("Adam", 100);
-        results[3] = new Result("Karol",1);
-
+        this.results = new Result[100];
+        add(new Result("Maciej", 100));
+        add(new Result("Jan",1));
+        add(new Result("Adam", 100));
+        add(new Result("Karol",1));
     }
 
     public Result[] getAllResults(){
-        return results;
+        Result[] resultsToReturn = new Result[resultsCounter];
+        for (int i = 0; i < resultsCounter; i++) {
+            resultsToReturn[i] = results[i];
+        }
+        return resultsToReturn;
     }
 
 
 
     public Result[] getTopResults (int n){
-    //1. 123123123
         Result[] resultsToReturn = new Result[n];
-        int loopSize = n<results.length ? n : results.length;
+        int loopSize = n<resultsCounter ? n : resultsCounter;
 
         for (int i = 0; i < loopSize; i++) {
             resultsToReturn[i] = results[i];
         }
-    //2. 12321312
-    //3. 123123
         return resultsToReturn;
+    }
+
+    public void add(Result result){
+        this.results[resultsCounter] = result;
+        this.resultsCounter++;
     }
 
 }

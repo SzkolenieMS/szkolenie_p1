@@ -20,4 +20,12 @@ public class Result {
     public int getResult() {
         return result;
     }
+
+    @Override
+    public String toString() {
+        return playerName + " " +result;
+    }
+
+
+
 }
