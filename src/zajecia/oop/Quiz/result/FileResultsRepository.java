@@ -67,11 +67,12 @@ public class FileResultsRepository implements ResultsRepository{
 
     public void add(Result result) {
 
-            try (FileWriter fw = new FileWriter(fileWithResult, true);
-                 BufferedWriter bw = new BufferedWriter(fw);
-                 PrintWriter out = new PrintWriter(bw)) {
-                out.println(result.toString());
-        } catch (IOException e) {
+//            try (FileWriter fw = new FileWriter(fileWithResult, true);
+//                 BufferedWriter bw = new BufferedWriter(fw);
+        PrintWriter out = null;
+        try {
+            out = new PrintWriter(fileWithResult);
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
     }
