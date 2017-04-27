@@ -1,10 +1,12 @@
 package zajecia.oop.Quiz;
 
+import zajecia.oop.Quiz.question.FileQuestionsRepository;
 import zajecia.oop.Quiz.question.MockQuestionsRepository;
 import zajecia.oop.Quiz.question.Question;
 import zajecia.oop.Quiz.result.FileResultsRepository;
 import zajecia.oop.Quiz.result.MockResultsRepository;
 import zajecia.oop.Quiz.result.Result;
+import zajecia.oop.Quiz.result.ResultsRepository;
 
 /**
  * Created by RENT on 2017-04-25.
@@ -12,9 +14,10 @@ import zajecia.oop.Quiz.result.Result;
 public class Quiz {
     public static void main(String[] args) {
 
-        MockQuestionsRepository questionsRepository = new MockQuestionsRepository();
+//        MockQuestionsRepository questionsRepository = new MockQuestionsRepository();
+        FileQuestionsRepository questionsRepository = new FileQuestionsRepository("C:\\Users\\RENT\\IdeaProjects\\szkolenie_p1\\src\\quiz_questions");
         QuizInterface quizInterface = new QuizInterface();
-        FileResultsRepository ResultsRepository = new FileResultsRepository("C:\\Users\\RENT\\IdeaProjects\\szkolenie_p1\\src\\quiz.txt");
+        ResultsRepository ResultsRepository = new FileResultsRepository("C:\\Users\\RENT\\IdeaProjects\\szkolenie_p1\\src\\quiz.txt");
         boolean gameFlag = true;
         String playerName = "";
         while (gameFlag) {
