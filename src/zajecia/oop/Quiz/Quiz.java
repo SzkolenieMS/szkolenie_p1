@@ -3,6 +3,7 @@ package zajecia.oop.Quiz;
 import zajecia.oop.Quiz.question.FileQuestionsRepository;
 import zajecia.oop.Quiz.question.MockQuestionsRepository;
 import zajecia.oop.Quiz.question.Question;
+import zajecia.oop.Quiz.question.QuestionsRepository;
 import zajecia.oop.Quiz.result.FileResultsRepository;
 import zajecia.oop.Quiz.result.MockResultsRepository;
 import zajecia.oop.Quiz.result.Result;
@@ -17,7 +18,10 @@ public class Quiz {
 //        MockQuestionsRepository questionsRepository = new MockQuestionsRepository();
         FileQuestionsRepository questionsRepository = new FileQuestionsRepository("C:\\Users\\RENT\\IdeaProjects\\szkolenie_p1\\src\\quiz_questions");
         QuizInterface quizInterface = new QuizInterface();
-        ResultsRepository ResultsRepository = new FileResultsRepository("C:\\Users\\RENT\\IdeaProjects\\szkolenie_p1\\src\\quiz.txt");
+        ResultsRepository resultsRepository = new FileResultsRepository("C:\\Users\\RENT\\IdeaProjects\\szkolenie_p1\\src\\quiz.txt");
+        game(questionsRepository,resultsRepository,quizInterface);
+    }
+        public static void game (QuestionsRepository questionsRepository, ResultsRepository resultsRepository, QuizInterface quizInterface){
         boolean gameFlag = true;
         String playerName = "";
         while (gameFlag) {
@@ -40,11 +44,11 @@ public class Quiz {
                         }
                     }
                     Result playerResult = new Result(playerName, correctAnswerCounter);
-                    ResultsRepository.add(playerResult);
+                    resultsRepository.add(playerResult);
                     quizInterface.showResult(playerResult);
                     break;
                 case 2:
-                    quizInterface.showTopResults(ResultsRepository.getTopResults(10));
+                    quizInterface.showTopResults(resultsRepository.getTopResults(10));
                     break;
                 case 0:
                     gameFlag = false;
